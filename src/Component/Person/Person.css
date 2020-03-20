@@ -1,0 +1,12 @@
+.person {
+    display: flex;
+    padding: 20px;
+    margin-right: 10px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    border: 1px solid lightgrey;
+}
+
+.person-details {
+    margin-left: 20px;
+}

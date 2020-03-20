@@ -1,0 +1,10 @@
+.user-container{
+    display: flex;
+}
+.user-image{
+    width: 60%;
+    margin-left: 5px;
+    margin-right: 10px;
+    border-right: 1px solid lightgrey;
+    border-bottom: 1px solid lightgrey;
+}
