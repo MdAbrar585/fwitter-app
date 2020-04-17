@@ -6,15 +6,24 @@ import FriendList from '../FriendList/FriendList';
 
 const Users = () => {
     // console.log(fakeData);
-    const first5 = fakeData.slice(0, 10);
-    const [users, setusers] = useState(first5);
+    const first10 = fakeData.slice(0, 15);
+    const [users, setusers] = useState(first10);
     const [friend,setFriend] = useState([]);
 
     const handleAddFriend = (user)=>{
-        console.log("friend Added",user);
-        const newFriend = [...friend,user];
-        setFriend(newFriend);
+        let existedFriend = friend.find( friends => friends.id ===user.id)
+        if(!existedFriend)
+        {
+            const newFriend = [...friend,user];
+            setFriend(newFriend);
+        }
+        else
+        {
+            alert('Friends Already Added');
+        }
+
     }
+
     return (
         <div className="user-container">
             <div className="user-image">

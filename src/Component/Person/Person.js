@@ -4,7 +4,7 @@ import { faCoffee, faUserFriends } from '@fortawesome/free-solid-svg-icons'
 import './Person.css'
 
 const Person = (props) => {
-    console.log(props);
+    // console.log(props);
     const { img, name, email, phone,salary } = props.user;
     const { street, suite, city, zipcode } = props.user.address;
     return (

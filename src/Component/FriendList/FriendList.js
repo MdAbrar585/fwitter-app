@@ -9,6 +9,7 @@ const FriendList = (props) => {
         <div>
             <h1>Friends Added : {friends.length} </h1>
             <p>Friends Yearly Salary : {total}</p>
+             
         </div>
     );
 };
